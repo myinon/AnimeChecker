@@ -1,6 +1,6 @@
 /*
  * Anime Checker - Verify the integrity of your anime files
- * Copyright (C) 2014-2017  Yinon Michaeli
+ * Copyright (C) 2014-2018  Yinon Michaeli
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,6 +21,8 @@
 
 import javax.swing.SwingUtilities;
 
+import com.anime.checker.AnimeFrame;
+
 
 public class AnimeChecker {
 
@@ -32,8 +34,8 @@ public class AnimeChecker {
 			@Override
 			public void run() {
 				// Run application's main window
-				// AnimeFrame anime = new AnimeFrame();
-				// anime.setVisible(true);
+				AnimeFrame anime = new AnimeFrame();
+				anime.setVisible(true);
 			}
 		});
 	}
